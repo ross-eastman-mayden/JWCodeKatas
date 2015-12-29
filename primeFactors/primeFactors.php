@@ -5,17 +5,19 @@ class primeFactors
 {
     protected $number;
 
+    /**
+     * @param $number
+     * @return array
+     */
     public function generate($number)
     {
         $primes = [];
 
-        while ($number % 2 == 0) {
-            $primes[] = 2;
-            $number /= 2;
-        }
+        for ($candidate = 2; $number > 1; $candidate++) {
 
-        if ($number > 1) {
-            $primes[] = $number;
+            for (; $number % $candidate == 0; $number /= $candidate) {
+                $primes[] = $candidate;
+            }
         }
 
         return $primes;
