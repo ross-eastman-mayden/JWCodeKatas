@@ -1,8 +1,10 @@
 <?php
 
-require '../../vendor/autoload.php';
+//require '../../vendor/autoload.php';
 
-use App\romanNumeralsPHP\romanNumerals;
+include_once '../../romanNumerals/romanNumerals.php';
+
+use romanNumeralsPHP\romanNumerals;
 
 class romanNumeralsTest extends PHPUnit_Framework_TestCase
 {
