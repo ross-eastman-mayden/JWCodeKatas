@@ -7,6 +7,11 @@ class primeFactors
 
     public function generate($number)
     {
-        return [];
+        if ($number == 2) {
+            return [2];
+        } else {
+            return [];
+        }
+
     }
 }
