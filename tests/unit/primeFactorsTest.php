@@ -1,8 +1,8 @@
 <?php
 
-require '../vendor/autoload.php';
+require '../../vendor/autoload.php';
 
-use App\primeFactors;
+use App\primeFactors\primeFactors;
 
 class primeFactorsTest extends PHPUnit_Framework_TestCase
 {
