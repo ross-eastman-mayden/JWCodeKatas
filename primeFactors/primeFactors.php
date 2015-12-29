@@ -7,11 +7,17 @@ class primeFactors
 
     public function generate($number)
     {
-        if ($number == 2) {
-            return [2];
-        } else {
-            return [];
+        $primes = [];
+
+        while ($number % 2 == 0) {
+            $primes[] = 2;
+            $number /= 2;
         }
 
+        if ($number > 1) {
+            $primes[] = $number;
+        }
+
+        return $primes;
     }
 }
