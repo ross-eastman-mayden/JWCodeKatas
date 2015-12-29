@@ -1,5 +1,5 @@
 <?php
-namespace App\primeFactorsPHP;
+namespace primeFactorsPHP;
 
 class primeFactors
 {

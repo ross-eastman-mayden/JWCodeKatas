@@ -1,5 +1,5 @@
 <?php
-namespace App\romanNumeralsPHP;
+namespace romanNumeralsPHP;
 
 class romanNumerals
 {
