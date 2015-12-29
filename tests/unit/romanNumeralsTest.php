@@ -2,7 +2,7 @@
 
 require '../../vendor/autoload.php';
 
-use App\romanNumerals\romanNumerals;
+use App\romanNumeralsPHP\romanNumerals;
 
 class romanNumeralsTest extends PHPUnit_Framework_TestCase
 {
